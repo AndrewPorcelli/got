@@ -36,3 +36,12 @@ if (jonSnowHealth <= jamieLannisterAttack - jonSnowDefense) {
   jonSnowHealth -= jamieLannisterAttack - jonSnowDefense;
   console.log(`Jon Snow's health is down to ${jonSnowHealth}`);
 }
+
+// Townspeople throws Jon Snow a health kit of 50: heal up
+
+const healthKit = 50;
+if (jonSnowHealth + healthKit >= 100) {
+  jonSnowHealth = 100;
+} else {
+  jonSnowHealth += healthKit;
+}
